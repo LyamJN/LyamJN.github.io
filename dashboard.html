@@ -7,7 +7,7 @@
     <title>Mijn profiel</title>
     <link href="site.css" rel="stylesheet"/>
 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQJ57Xj64_Otr_JWBFHYbE4KDyIEhVT1YjTQ&s">
+    <img class="hzimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQJ57Xj64_Otr_JWBFHYbE4KDyIEhVT1YjTQ&s">
     <section>
         <div class="navbar">
     <nav>
@@ -26,49 +26,160 @@
 </head>
 </div>
 <body>
+
+  <div class="dmenu">
+    <aside>
+        <h3>Helpfull websites</h3>
+        <ul>
+        <li><a target="_blank" href="https://oer.hz.nl/?_gl=1*akczbo*_gcl_au*MTE3Nzk5OTMwLjE3NTYyOTM1NDE.*_ga*MTY5NDc3NzExNi4xNzU2MjkzNTI5*_ga_6MYD4DVW57*czE3NTczMzE3MzIkbzEkZzEkdDE3NTczMzE3ODIkajEwJGwwJGgw">The HZ HBO-ICT Course and Examination Regulations (CER).</a></li>
+        <li><a target="_blank" href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f">The Implementation Regulations (IR) of the HBO-ICT program.</a></li>
+        <li><a target="_blank" href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f">The GitHub environment of the study program ICT.</a></li>
+        <li><a target="_blank" href="https://hz.osiris-student.nl/voortgang">Study progress</a></li>
+        <li><a target="_blank" href="https://learn.hz.nl/pluginfile.php/835480/mod_resource/content/2/PCO%20course%20reader.pdf"> PCO</a></li>
+        </ul>
+    </aside>
+    </div>
+    
+<body>
     <article class="item">
-    <table>
-        <tr>
-            <th>Quarter</th>
-            <th>Course</th>
-            <th>EC</th>
-            <th>Exam</th>
-            <th>Grade</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td></td>
-            <td></td>
-            <td colspan="2">Presentation</td>
-            <td><input type="text" name="grade" placeholder="Grade"></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><input type="text" name="grade" placeholder="Grade"></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><input type="text" name="grade" placeholder="Grade"></td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><input type="text" name="grade" placeholder="Grade"></td>
-        </tr>
-    </table>
+  <table>
+    <tr>
+        <th>Semester</th>
+        <th>Course</th>
+        <th>EC</th>
+        <th>Exam</th>
+        <th>Grade</th>
+    </tr>
+
+    <!-- Semester 1 -->
+    <tr>
+        <td rowspan="7">1</td>
+        <td>Program- & Career Orientation</td>
+        <td>2.5</td>
+        <td>Presentation</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Computer Science Basics</td>
+        <td>5</td>
+        <td>Written knowledge test</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Programming Basics</td>
+        <td>5</td>
+        <td>Written knowledge test</td>
+        <td></td>
+    </tr>
+    <!-- Object-Oriented Programming (2 exams) -->
+    <tr>
+        <td rowspan="2">Object-Oriented Programming</td>
+        <td rowspan="2">10</td>
+        <td>Presentation (50%)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Written knowledge test (50%)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>IT Personality Projectweek 1</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>IT Personality Projectweek 2</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td></td>
+    </tr>
+
+    <!-- Semester 2 -->
+    <!-- Framework Project 1 (3 exams) -->
+    <tr>
+        <td rowspan="3">2</td>
+        <td rowspan="3">Framework Project 1</td>
+        <td rowspan="3">10</td>
+        <td>Written knowledge test (50%)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Presentation (25%)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Portfolio (25%)</td>
+        <td></td>
+    </tr>
+    <!-- Framework Project 2 (3 exams) -->
+    <tr>
+        <td rowspan="3"></td>
+        <td rowspan="3">Framework Project 2</td>
+        <td rowspan="3">10</td>
+        <td>Presentation (25%)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Portfolio (25%)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Portfolio (50%)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Business Understanding Basics</td>
+        <td>2.5</td>
+        <td>Assignment</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>IT Personality International Week</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td></td>
+    </tr>
+
+    <!-- Semester 1 & 2 -->
+    <tr>
+        <td rowspan="5">1 & 2</td>
+        <td>Personal Professional Development Exploration</td>
+        <td>12.5</td>
+        <td>Criterion-referenced interview</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>IT Personality 1</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>IT Personality 2</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>IT Personality 3</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>IT Personality 4</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td></td>
+    </tr>
+</table>
+
+
     </article>
 
-    <footer>
-        <p> Author: Lyam Noordijk</p>
-    </footer>
-    
+
 </body>
 </html>
