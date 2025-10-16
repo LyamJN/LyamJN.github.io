@@ -1,280 +1,330 @@
+ /* style body element*/
  body {
-    background-image: url(https://www.shutterstock.com/image-illustration/panorama-clouds-hdri-environment-map-600nw-2235524663.jpg);
-    background-size: 110%;
-    background-position: top;
-    animation-name: backg;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-}
+   background-image: url("../images/cloudbackground.webp");
+   background-position: top;
+   animation-name: backg;
+   animation-duration: 15s;
+   animation-iteration-count: infinite;
+   background-size: cover;
+   /* scales automatically, fills screen */
+   background-position: center;
+   /* keeps it centered */
+   background-attachment: fixed;
+   /* optional: makes it stay still when scrolling */
+ }
 
-.hzimg{
-  width: 350px;
-  display: inline-block;
-  padding-left: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
+ /* make background move (starts top left, goes to top right then comes back)*/
+ @keyframes backg {
+   0% {
+     background-position: 0% 0%;
+   }
 
-.ictimg{
-  width: 300px;
-  margin-left: 900px;
-  margin-top: -900px;
-  border-radius: 25px;
-  height: 300px;
-  padding: 20px;
-}
+   50% {
+     background-position: 100% 0%;
+   }
 
-.katimg{
-  width: 300px;
-  height: 300px;
-  margin-left:800px;
-  margin-top: -500px;
-  border-radius: 25px;
-}
+   100% {
+     background-position: 0% 0%;
+   }
+ }
 
-@keyframes backg {
-  0%   { background-position: 0% 0%; }
-  50%  { background-position: 100% 0%; }
-  100% { background-position: 0% 0%; }
+ /* style image swot representation, study choise and programming experience*/
+ .swotimg,
+ .studychoiseimg,
+ .programexperienceimg {
+   width: 350px;
+   height: 350px;
+ }
+
+ /* style mojang studios image*/
+ .mojangimg {
+   align-items: center;
+ }
+
+ /* style HZ university logo*/
+ .hzimg {
+   width: 350px;
+   display: block;
+   height: 100px;
+ }
+
+ /* style image representing ICT and my cats*/
+ .ictimg,
+ .katimg {
+   width: 300px;
+   border-radius: 25px;
+   height: 300px;
+   padding: 20px;
+ }
+
+ /* styling for text elements*/
+h1,
+h2,
+h3,
+p,
+a {
+  text-align: center;
+  font-family: sans-serif;
 }
 
 h1 {
   font-size: 50px;
   padding: 5px;
-  margin-top: -7px;
-  margin-bottom: 5px;
-  color:aliceblue;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h1, h2 {
-  text-align: center;
+  margin: 0 auto;
   color: aliceblue;
   max-width: 40%;
 }
 
-h1, h2, p, h3{
-  text-align: center;
-  font-family: 'Poppins', 'Montserrat', 'Open Sans';
-}
-li{
-  text-align: left;
+h2 {
+  color: aliceblue;
+  max-width: 40%;
 }
 
-.item p{
-  display: inline-block;
+li {
+  text-align: left;
+  font-size: 20px;
+}
+
+.item p {
+  display: block;
   font-size: 22px;
   color: black;
+}
+
+/* =======================
+   Tables & Dashboard
+======================= */
+table,
+td,
+th {
+  background-color: rgba(245, 245, 245, 0.442);
+  color: black;
+  border: 1px solid black;
+}
+
+ /* style navbar text*/
+ .navs {
+   text-align: center;
+   width: 80%;
+   font-size: 25px;
+   padding: 25px;
  }
 
-table, td, th {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 300px;
-  border: 1px solid black;
-  margin-top:200px;
-}
+ /* style navbar*/
+ .navbar {
+   max-width: 700px;
+   background-color: rgb(27, 38, 59);
+   height: 35px;
+   display: block;
+ }
 
-.grade {
-  width: 50px;
-}
+ /* dashboard allignment*/
+ .dashboard-center {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
 
-.navs {
-     text-align: center;
-     width: 80%;
-     font-size: 25px;
-     padding: 25px;
-}
+ /* style the blog main page*/
+ .studychoiseblog,
+ .swotblog,
+ .experienceblog,
+ .ictfieldworkblog,
+ .companyblog {
+   background-color: rgba(245, 245, 245, 0.442);
+   border-radius: 25px;
+   width: 80%;
+   padding: 20px;
+ }
 
-.navbar {
-  margin-top: -110px;
-  margin-left: 380px;
-  margin-right: auto;
-  max-width: 700px;
-  background-color:rgb(27, 38, 59);
-  height: 80px;
-}
+ /* style the blogs seperate pages*/
+ .bigstudychoiseblog,
+ .bigswotblog,
+ .bigexperienceblog,
+ .bigictfieldworkblog,
+ .bigcompanyblog {
+   background-color: rgba(245, 245, 245, 0.442);
+   border-radius: 25px;
+   width: 50%;
+   height: 95%;
+   padding: 20px;
+ }
 
-.tmenu {
-  width: 100%;
-  background-color: rgba(245, 245, 245, 0.442);
-  margin-left: 50px;
-  padding: 10px;
-  margin-top: 20px;
-  max-width: 300px;
-  height: 570px;
-  border-radius: 25px;
-}
+ /* style the reason why i am suited for this program*/
+ .programsuitme {
+   width: 70%;
+   background-color: rgba(245, 245, 245, 0.442);
+   padding: 10px;
+   height: 260px;
+   border-radius: 25px;
+ }
 
-.tmenu1 {
-  width: 100%;
-  background-color: rgba(245, 245, 245, 0.442);
-  margin-left: 400px;
-  margin-top: -590px;
-  padding: 10px;
-  max-width: 300px;
-  height: 570px;
-  border-radius: 25px;
-}
+ /* style profile page describing me*/
+ .whoami {
+   width: 60%;
+   background-color: rgba(245, 245, 245, 0.442);
+   height: 220px;
+   border-radius: 25px;
+ }
 
-.tmenu2 {
-  width: 100%;
-  background-color: rgba(245, 245, 245, 0.442);
-  margin-left: 750px;
-  margin-top: -590px;
-  padding: 10px;
-  max-width: 300px;
-  height: 570px;
-  border-radius: 25px;
-}
+ /* style faqs*/
+ .faqs {
+   background-color: rgba(245, 245, 245, 0.442);
+   padding: 10px;
+   max-width: 700px;
+   border-radius: 5px;
+   cursor: pointer;
+ }
 
-.tmenu3 {
-  width: 100%;
-  background-color: rgba(245, 245, 245, 0.442);
-  padding: 10px;
-  margin-top: -590px;
-  margin-left: 1100px;
-  max-width: 300px;
-  height: 570px;
-  border-radius: 25px;
-} 
+ /* style the p element in summary*/
+ details p {
+   background-color: rgba(245, 245, 245, 0.442);
+   max-width: 700px;
+   padding: 10px;
+   border-radius: 5px;
+   width: 700px;
+ }
 
-.menu {
-  width: 100%;
-  background-color: rgba(245, 245, 245, 0.442);
-  margin-right: 20%;
-  margin-left: 10%;
-  margin-bottom: 15px;
-  margin-top: 2%;
-  padding: 10px;
-  max-width: 600px;
-  height: 260px;
-  border-radius: 25px;
-}
+ /* list of my ICT interests*/
+ .ictinterests {
+   width: 100%;
+   background-color: rgba(245, 245, 245, 0.442);
+   padding: 10px;
+   max-width: 90%;
+   height: 250px;
+   border-radius: 25px;
+ }
 
-.dmenu {
-  width: 500px;
-  background-color: aliceblue;
-  height: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -150px;
-}
+ /* white backgrounf for the characteristics list*/
+ .characteristics {
+   width: 100%;
+   background-color: rgba(245, 245, 245, 0.442);
+   padding: 10px;
+   max-width: 40%;
+   height: 200px;
+   border-radius: 25px;
+ }
 
-.menu1 {
-  width: 100%;
-  background-color: rgba(245, 245, 245, 0.442);
-  margin-right: 20%;
-  margin-left: 2%;
-  margin-bottom: 15px;
-  margin-top: 2%;
-  padding: 10px;
-  max-width: 600px;
-  height: 260px;
-  border-radius: 25px;
-}
+ /* style aside menu*/
+ aside {
+   display: block;
+   text-align: center;
+   width: 29%;
+   padding: 3px;
+   background-color: rgb(31, 43, 51);
+   color: aliceblue;
+   border-radius: 25px;
+ }
 
-.list {
-  width: 100%;
-  background-color: rgba(245, 245, 245, 0.442);
-  margin-right: 20%;
-  margin-left: 10%;
-  padding: 10px;
-  max-width: 80%;
-  height: 200px;
-  border-radius: 25px;
-}
+ /* style a elements*/
+ a {
+   color: whitesmoke;
+   text-decoration: none;
+   text-align: center;
+ }
 
-.list1 {
-  width: 100%;
-  background-color: rgba(245, 245, 245, 0.442);
-  margin-right: 20%;
-  margin-left: 10%;
-  padding: 10px;
-  max-width: 20%;
-  height: 200px;
-  border-radius: 25px;
-}
+ a:hover {
+   color: rgb(180, 194, 228);
+ }
 
-.smenu {
-width: 100%;
-background-color: rgba(245, 245, 245, 0.442);
-padding: 10px;
-max-width: 600px;
-height: 160px;
-border-radius: 25px;
-margin-left: 660px;
-margin-top: -610px;
-}
+ a:active {
+   color: rgb(93, 139, 232);
+ }
 
-.smenu1 {
-width: 100%;
-background-color: rgba(245, 245, 245, 0.442);
-padding: 10px;
-max-width: 600px;
-height: 160px;
-border-radius: 25px;
-margin-left: 660px;
-margin-top: 30px;
-}
+ /* style footer */
+ footer {
+   background-color: rgb(27, 38, 59);
+   width: 100%;
+   color: aliceblue;
+   padding: 7px;
+ }
 
-.smenu2 {
-width: 100%;
-background-color: rgba(245, 245, 245, 0.442);
-padding: 10px;
-max-width: 600px;
-height: 160px;
-border-radius: 25px;
-margin-left: 660px;
-margin-top: 25px;
-} 
+ /* body and html styling */
+ body,
+ html {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+ }
 
-aside {
-  display: block;
-  text-align: center;
-  width: 29%;
-  padding: 3px;
-  float: right;
-  margin-top: -100px;
-  font-style: italic;
-  background-color: rgb(31, 43, 51);
-  color: aliceblue;
-  border-radius: 25px;
-}
-/* SEO, FAQ answ, posts */
+ /* css grid and responsive style*/
+ .grid-container {
+   display: grid;
+   grid-template-columns: 1fr;
+   /* one main column */
+   grid-template-rows: auto auto 1fr auto;
+   /* header, title, main content, footer */
+   min-height: 100vh;
+   /* full viewport height */
+   gap: 10px;
+ }
 
-a {
-  color: whitesmoke;
-}
+ .grid-container>div {
+   padding: 15px;
+   border-radius: 10px;
+ }
 
-a:hover {
-  color: rgb(180, 194, 228);
-}
+ /* Header (logo + navbar) */
+ .toprow {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: transparent;
+ }
 
-a:active {
-  color: rgb(176, 194, 231);
-}
+ /* Title row */
+ .header {
+   text-align: center;
+   padding: 20px 0;
+ }
 
-footer {
-  position:absolute;
-  bottom:0px;
-  background-color: rgb(27, 38, 59);
-  width: 100%;
-  padding: 4px;
-  margin-top: 5px;
-  color: aliceblue;
-}
+ /* Main content section */
+ .maincontent {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+ }
 
-details > summary {
-  padding: 4px;
-  font-size: 30px;
-  width: 200px;
-  background-color: aliceblue;
-  border: none;
-  box-shadow: 1px 1px 2px ;
-  cursor: pointer;
-}
+ /* Footer */
+ .cssgridfooter {
+   text-align: center;
+   padding: 0px;
+   align-self: end;
+   margin: 0;
+ }
 
+ /* responsive web design, all items go to 1 column if the screen is smaller than 768px*/
+ @media (max-width: 768px) {
+   .item3 {
+     grid-template-columns: 1fr;
+   }
+ }
 
+ /* style the progress bar*/
+ progress {
+   width: 80%;
+   height: 25px;
+   border-radius: 10px;
+   overflow: hidden;
+ }
 
+ .progress-section {
+   width: 100%;
+   /* fill grid space */
+   text-align: center;
+   /* centers content */
+   margin-top: 20px;
+ }
+
+ progress::-webkit-progress-value {
+   background-color: rgb(81, 114, 179);
+   /* green progress color */
+   border-radius: 10px;
+ }
+
+ /* info for nbsa under progress bar*/
+ .nbsa-info {
+   font-size: 14px;
+   color: aliceblue
+ }
